@@ -14,17 +14,17 @@
 		      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		        <span class="navbar-toggler-icon"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Flixter</a>
+		      <%= link_to 'Flixter', root_path, class: 'navbar' %>
 
 		      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-		        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+		        <!-- <ul class="navbar-nav mr-auto mt-2 mt-md-0">
 		          <li class="nav-item">
 		            <a class="nav-link" href="#">Link</a>
 		          </li>
 		          <li class="nav-item">
 		            <a class="nav-link disabled" href="#">Disabled</a>
 		          </li>
-		        </ul>
+		        </ul> -->
 		        <ul class="navbar-nav">
 		        	<% if user_signed_in? %>
 		        		<li class="nav-item">
@@ -36,7 +36,7 @@
 			        	</li>
 			        	<li class="nav-item">
 			        		<%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
-			        	</li>
+			        	</li> 
 			        <% end %>
 			      </ul>  	
 		      </div>
@@ -55,9 +55,9 @@
 
     <div id="footer">
     	<div class="container">
-    		<b>Footer Here</b>
+    		<b>Teachers</b>
     		<br />
-    		<%= link_to 'Link', '#' %>
+    		<%= link_to 'Teach a Course', new_instructor_course_path %>
     	</div>	
     </div>	
   </body>
